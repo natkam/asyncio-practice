@@ -10,8 +10,7 @@ import aiohttp
 
 async def download_site(url, session):
     async with session.get(url) as resp:
-        # print(f"Read {resp.content} from {url}")
-        pass
+        print(f"Read {resp.content} from {url}")
 
 
 async def download_all_sites(sites):

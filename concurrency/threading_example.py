@@ -20,8 +20,7 @@ def get_session():
 def download_site(url):
     session = get_session()
     with session.get(url) as resp:
-        # print(f"Read {len(resp.content)} from {url}")
-        pass
+        print(f"Read {len(resp.content)} from {url}")
 
 
 def download_all_sites(sites):

@@ -8,8 +8,7 @@ import time
 
 def download_site(url, session):
     with session.get(url) as response:
-        # print(f"Read {len(response.content)} from {url}")
-        pass
+        print(f"Read {len(response.content)} from {url}")
 
 
 def download_all_sites(sites):
